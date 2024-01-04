@@ -21,7 +21,7 @@ public class Ut {
 
         public static void run(String cmd) {
             try {
-                ProcessBuilder processBuilder = new ProcessBuilder("bash", "-c", cmd);
+                ProcessBuilder processBuilder = new ProcessBuilder("C:/Program Files/Git/bin/bash.exe", "-c", "your bash command here");
                 Process process = processBuilder.start();
                 process.waitFor();
             } catch (Exception e) {
